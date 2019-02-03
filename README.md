@@ -109,10 +109,7 @@ confidence_interval
 doctors_should_wash_their_hands = True
 ```
 ![image](https://github.com/Reljod/data-science-project/blob/master/true.png)
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+ 
 
 ## Authors
 
