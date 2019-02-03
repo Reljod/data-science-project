@@ -16,6 +16,8 @@ yearly = pd.read_csv("datasets/yearly_deaths_by_clinic.csv")
 
 print(yearly)`
 ```
+![image](https://github.com/Reljod/data-science-project/blob/master/yearly.png)
+
 ### Task 2
 
 ```
@@ -26,6 +28,7 @@ yearly2 = yearly[yearly["clinic"] == "clinic 2"]
 
 print(yearly1)
 ```
+![image](https://github.com/Reljod/data-science-project/blob/master/yearly1.png)
 
 ### Task 3
 
@@ -36,6 +39,7 @@ ax = df1.plot(x="year", y="proportion_deaths", label="Clinic1")
 df2.plot(x="year", y="proportion_deaths", label="Clinic2", ax=ax)
 ax.set_ylabel("Proportion deaths")
 ```
+![image](https://github.com/Reljod/data-science-project/blob/master/clinic.png)
 
 ### Task 4
 
@@ -47,6 +51,7 @@ monthly["proportion_deaths"] = (monthly["deaths"] / monthly["births"])
 
 print(monthly.head())
 ```
+![image](https://github.com/Reljod/data-science-project/blob/master/monthlyhead.png)
 
 ### Task 5
 
@@ -56,6 +61,7 @@ ax.set_xlabel("Date")
 ax.set_ylabel("Proportion deaths")
 ax
 ```
+![image](https://github.com/Reljod/data-science-project/blob/master/ax.png)
 
 ### Task 6
 
@@ -70,6 +76,7 @@ ax = before_washing.plot(x="date", y="proportion_deaths", label="death proportio
 after_washing.plot(x="date", y="proportion_deaths", label="death proportion after washing", ax=ax)
 ax.set_ylabel("Proportion deaths")
 ```
+![image](https://github.com/Reljod/data-science-project/blob/master/ax2.png)
 
 ### Task 7
 
@@ -79,6 +86,7 @@ after_proportion = after_washing["proportion_deaths"]
 mean_diff = after_proportion.mean() - before_proportion.mean()
 mean_diff
 ```
+![image](https://github.com/Reljod/data-science-project/blob/master/mean_diff.png)
 
 ### Task 8
 
@@ -93,11 +101,25 @@ for i in range(3000):
 confidence_interval = pd.Series(boot_mean_diff).quantile([0.025, 0.975])
 confidence_interval
 ```
+![image](https://github.com/Reljod/data-science-project/blob/master/confidence.png)
 
 ### Task 9
 
 ```
 doctors_should_wash_their_hands = True
 ```
+![image](https://github.com/Reljod/data-science-project/blob/master/true.png)
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Reljod T. Oreta** - *Initial work* - [Reljod](https://github.com/Reljod)
+
+## Acknowledgments
+
+* Datacamp
 
 
